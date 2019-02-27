@@ -1,0 +1,42 @@
+{
+  "name": "litterbox-ideas",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@gridsome/source-contentful": "^0.2.1",
+    "@gridsome/transformer-remark": "^0.2.1",
+    "font-awesome": "^4.7.0",
+    "gridsome": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-markdown": "^2.2.4"
+  },
+  "devDependencies": {
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
+    "prettier-standard": "^9.1.1"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "prettier-standard",
+        "git add"
+      ],
+      "src/**/*.vue": [
+        "prettier-standard",
+        "git add"
+      ],
+      "src/**/*.scss": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
+  }
+}
